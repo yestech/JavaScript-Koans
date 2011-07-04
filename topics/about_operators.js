@@ -8,7 +8,7 @@ $(document).ready(function(){
     for (var i = 0; i <= 5; i++) {
       result = result + i;
     }
-    equals(result, __, "What is the value of result?");
+    equals(result, 15, "What is the value of result?");
   });
 
   test("assignment addition", function() {
@@ -17,7 +17,7 @@ $(document).ready(function(){
       //the code below is just like saying result = result + i; but is more concise
       result += i;
     }
-    equals(result, __, "What is the value of result?");
+    equals(result, 15, "What is the value of result?");
   });
 
   test("subtraction", function() {
@@ -25,7 +25,7 @@ $(document).ready(function(){
     for (var i = 0; i <= 2; i++) {
       result = result - i;
     }
-    equals(result, __, "What is the value of result?");
+    equals(result, 2, "What is the value of result?");
   });
 
   test("assignment subtraction", function() {
@@ -33,7 +33,7 @@ $(document).ready(function(){
     for (var i = 0; i <= 2; i++) {
       result -= i;
     }
-    equals(result, __, "What is the value of result?");
+    equals(result, 2, "What is the value of result?");
   });
 
   //Assignment operators are available for multiplication and division as well
@@ -44,7 +44,7 @@ $(document).ready(function(){
     var x = 5;
     //again this is exactly the same as result = result % x
     result %= x;
-    equals(result, __, "What is the value of result?");
+    equals(result, 0, "What is the value of result?");
   });
 
 });
